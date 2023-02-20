@@ -7,6 +7,7 @@ namespace PlaylistAPI.Models
     //class with properties
     public class Song
     {
+        [Key]
         public int Id { get; set; }
         [Required]
         public string? Artist { get; set; }
@@ -22,10 +23,11 @@ namespace PlaylistAPI.Models
         public Genre? Genre { get; set; }
     }
 
-    
+
     //class with properties
     public class Genre
     {
+        [Key]
         public int? GenreId { get; set; }
         [Required]
         public string? Name { get; set; }
