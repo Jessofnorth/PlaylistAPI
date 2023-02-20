@@ -22,7 +22,10 @@ namespace PlaylistAPI.Models
         public Genre? Genre { get; set; }
     }
 
-    public class Genre {
+    
+    //class with properties
+    public class Genre
+    {
         public int? GenreId { get; set; }
         [Required]
         public string? Name { get; set; }
