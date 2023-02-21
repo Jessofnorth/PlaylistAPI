@@ -40,7 +40,7 @@ namespace PlaylistAPI.Controllers
         public async Task<ActionResult<Song>> GetSong(int id)
         {
             // Include Genre to response
-            var song = await _context.Songs.Include(s => s.Genre).FirstOrDefaultAsync(s => s.Id == id);
+            var song = await _context.Songs.Include(s => s.Genre).FirstOrDefaultAsync(m => m.Id == id);
             if (_context.Songs == null)
             {
                 return NotFound();

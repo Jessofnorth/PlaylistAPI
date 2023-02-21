@@ -19,7 +19,7 @@ namespace PlaylistAPI.Models
         //foreign key
         [Required]
         [ForeignKey("GenreId")]
-        public int? GenreId { get; set; }
+        public int GenreId { get; set; }
         public Genre? Genre { get; set; }
     }
 
@@ -28,7 +28,7 @@ namespace PlaylistAPI.Models
     public class Genre
     {
         [Key]
-        public int? GenreId { get; set; }
+        public int GenreId { get; set; }
         [Required]
         public string? Name { get; set; }
     }
